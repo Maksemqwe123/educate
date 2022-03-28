@@ -69,6 +69,8 @@ class Dog:
         print(f'Имя:{self.name}\nВозраст:{age}')
 
 
+      
+      
 # my_pet = Dog('Bobik')
 #   # my_pet.run()
 #   # my_pet.sit()
@@ -118,11 +120,11 @@ class Rectangle:
 
 
 
-
-
 r1 = Rectangle(5,3)
 r1.getArea()
 r1.drawRect()
+
+
 class Car:
     """модель авто и её описание"""
 
