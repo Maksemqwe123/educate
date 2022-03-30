@@ -144,3 +144,89 @@ while True:
         ball.dx = -ball.dx
 
 window.mainloop()
+
+
+""""""
+"""Циклы for, while"""
+
+# health = 100
+# flag = True
+#
+# while True :
+#     if health <= 0:
+#        print('Персонаж умер')
+#        break
+#
+#
+#     print(f'Персонаж жив , его здоровье: {health}')
+#     health -= 15
+#
+# # else:
+#     print('Произошла ошибка, про')
+
+# number = 10
+# x = 0
+#
+# while True:
+#     if x < 10:
+#         x += 1
+#         continue
+#
+#     print(x)
+#     break
+
+# import random as r
+#
+# number = r.randrange(1,10)
+# print(number)
+
+"""игра орёл-решка"""
+
+# import random as r
+#
+# question = input(f"хочешь сыграть в игру?\n")
+#
+# if question.lower() == 'да':
+#     param = r.choice(["орёл", "решка"])
+#     count = 1
+#
+# while True:
+#     n = input("Введите ваш ответ (орёл, решка)")
+#
+#     if n == param:
+#         print(f"\nВы угадали!\nВы потратили {count} попыток")
+#         break
+#     else:
+#         print("Вы не угадали")
+#
+a = 2
+b = 5
+
+c = 7
+d = 9
+
+for i in range(a, b+1):
+    print("")
+    for j in range(c, d+1):
+        print(f"{i} x {j} = {i * j}")
+''''''''''
+import random as r
+
+
+question = input(f"хочешь сыграть в игру?\n")
+
+if question.lower() == 'да':
+    number = r.randint(1, 5)
+    cout = 1
+
+while True:
+    n = int(input("Введите число:"))
+
+    if n == number:
+        print(f"\nВы угадали!\nВы потратили {cout} попыток")
+        break
+    elif n > number:
+        print('Ваше число больше загаданого')
+    elif n < number:
+        print('Ваше число меньше загаданого')
+    cout += 1
