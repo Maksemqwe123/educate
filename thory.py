@@ -150,6 +150,111 @@ class Battery:
         self.battery = battery
 
     def describe_battery(self):
+     
+     
+   """"""""""""""""""""""""""
+   
+     
+     
+     # a = 1523
+#
+# str_a = str(a)
+
+# second = str_a[0]
+# first = str_a[1]
+# third = str_a[2]
+# fourth = str_a[3]
+
+# set_a = set()
+# for num in str_a:
+#     set_a.add(num)
+
+# set_a.add(first)
+# print(set_a)
+
+# if len(set_a) == 4:
+#     print('Цифры уникальные')
+# else:
+#     print("есть повторения")
+
+"""Kоллекции: cписки, kортежи, строки"""
+
+# names = ["Artem", "Ivan", 10, 155, True, 'Vasya']
+# print(names)
+# print(f"Меня зовут: {names[0]}")
+#
+# names[1] = "Maxim"
+# print(names)
+#
+# names.append("Ivan")
+# print(names)
+#
+# names.insert(2, 'Petya')
+# print(names)
+#
+# del names[3], names[3], names[3]
+# print(names)
+#
+# pop_names = names.pop()
+# print(names)
+# print(pop_names)
+#
+# names.remove('Vasya')
+# print(names)
+#
+# names.insert(2, "Andrey")
+#
+# # names.sort(reverse=True)
+# print("\n", names)
+# print(sorted(names))
+# print(names)
+#
+# names.reverse()
+# print(names)
+#
+# print(len(names))
+#
+# tuple_names = tuple(names)
+# reversed(tuple_names)
+# print(tuple_names)
+
+# numbers = []
+# for i in range(1, 11):
+#     numbers.append(i)
+#
+# for i in range(11, 21):
+#     numbers.append(i)
+#
+# print(numbers)
+#
+# nam = [x**2 for x in range(1, 11) if x % 2 == 0]
+# print(nam)
+# import random as r
+#
+# magic_ball = ["Я покушал", "Ответ где то рядом", "отстань", 'Ой,всё', "за комодом"]
+#
+# question = (input('Введи свой вопрос и я на него отвечу:'))
+# print(
+#     r.choice(magic_ball)
+# )
+
+# list_2 = [x for x in range(1, 21)]
+# print(list_2)
+# print(list_2[0:10:4])
+
+set_1 = set('hello')
+set_2 = set('aloha')
+set_1.add('hi')
+print(set_1)
+print(set_2)
+
+# if 'hi' in set_1:
+#     print('hi in set_1')
+
+# print(set_1.isdisjoint(set_2))
+set_2.update(set_1)
+print(se
+     
         print(f'Мощность акума: {self.battery} кВт')
 
 
