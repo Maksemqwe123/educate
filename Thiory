@@ -1,0 +1,117 @@
+"""Словари"""
+
+# users = {"login_1": "password_1", "login_2": 112233}
+#
+# print(users)
+# print(
+#     users["login_1"],
+#     users["login_2"]
+# )
+#
+# # print(users["login_1"] == "password_1")
+#
+# password_1 = users["login_1"]
+# print(password_1)
+#
+# users['login_3'] = "8569"
+# print(users)
+#
+# users['login_3'] = "112233"
+# print(users)
+#
+# del users['login_3']
+# print(users)
+#
+# print(
+#     users.get('login_3', 5557)
+# )
+#
+# # for key, value in users.items():
+# #     print(f'\nKey:{key}')
+# #     print(f'\nValue: {value}')
+#
+# for password in users.values():
+#     print(f'\nЗначение: {password}')
+
+logins = {
+    1: 'login_1',
+    2: 'login_2'
+}
+
+passwords = {
+    1: 'password_1',
+    2: 'password_2'
+}
+
+users = {
+    'user_1': {logins[1]: passwords[1]},
+    'user_2': {logins[2]: passwords[2]},
+
+}
+
+# for user in users.items():
+#     print(f'Пользователь: {user}')
+#     for user_login in user[1]:
+#         print(user_login)
+
+
+"""Функции"""
+# def sum_(num_1, num_2):
+#     summa = num_1 + num_2
+#     return summa
+#
+#
+# summa = sum_(3, 5)
+# print(summa + 5)
+
+
+"""Автобус"""
+# def sum_(num_1, num_2):
+#     summa = (num_1 + num_2) % 7 == 0
+#     if (num_1 + num_2) % 7 == 0:
+#         print(f'Ваш билет счастливый')
+#     else:
+#         print(f'Ваш билет не счастливый')
+#     print(summa)
+#
+#
+# sum_(777777, 777777)
+
+
+"""Имя и фамилия"""
+# def user(first_name, last_name, middle_name=None):
+#     if middle_name == None:
+#         print(f"Имя: {first_name}\nФамилия: {last_name}")
+#     else:
+#         print(f"Имя: {first_name}\nФамилия: {last_name}\nОтчество: {middle_name}\n")
+#
+#
+# user("Maxim", "Markovtsov")
+# user("Maxim", "Markovtsov", "Anato'evich")
+# user(last_name="Markovtsov", first_name="Maxim")
+
+
+# def user(*logins):
+#     for login in logins:
+#         print(f'Логин: {login}')
+#
+#
+# user('login_1', 'login_2', 'login_3')
+
+# def print_pet_names(owner, **pets):
+#     print(f'Имя владельца: {owner}')
+#     for pet, name in pets.items():
+#         if type(name) is list:
+#             print(f'{pet}: {name}')
+#         else:
+#             print(f'{pet}: {", "join(name)}')
+#
+#
+# print_pet_names('Max', dog='Chaki', fish=['Laary', 'Glory', 'Dory'])
+
+def describe_city(city, country='Belarus'):
+    print(f'{city.title()} находится в стране {country.title()}')
+
+
+describe_city('гомель', 'беларусь')
+describe_city('москва', 'россия')
